@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <!--link libreria Animate.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!--https://michalsnik.github.io/aos/-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <title>Salsas de la abuela Muriel</title>
 </head>
@@ -33,7 +37,7 @@
                 <img src="img/header-background.png" alt="" class="top-img">
             </div>
             <div class="top-text">
-                <h2>Salsas Caseras</h2>
+                <h2 class="animate__animated animate__tada">Salsas Caseras</h2>
             </div>
         </div>
     </header>
@@ -48,11 +52,11 @@
                 puedas practicar en casa y elaborarlas sin necesitar demasiado tiempo. Esperamos que las disfrutes.
             </p>
         </div>
-        <div class="gallery-main">
+        <div class="gallery-main" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000">
             <img src="img/foto-index-lite.png" alt="" class="gallery__item gallery-img span1">
             <div class="gallery__item gallery-text span1">
-                <h1>¿Dónde puedes encontrarnos?</h1>
-                <h1>Ningun Lugar 587 - Kansas</h1>
+                <h1 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">¿Dónde puedes encontrarnos?</h1>
+                <h1 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">Ningun Lugar 587 - Kansas</h1>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198216.8931082254!2d-100.56408440454109!3d38.48167245382934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87a31771717c016b%3A0x68c2b4a94b3e095f!2sKansas%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sar!4v1648837723404!5m2!1ses-419!2sar"
                     width="300" height="450" style="border:0;" allowfullscreen="" loading="lazy"
@@ -64,10 +68,10 @@
         <iframe width="560" height="315" src="https://www.youtube.com/embed/m_GA8_EoUZ4" title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen class="iframe-video"></iframe>
+            allowfullscreen class="iframe-video" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1000"></iframe>
     </aside>
     <section>
-        <p>
+        <p class="animate__animated animate__tada">
             ¡Nuestra ultima receta en youtube, qué esperas para ir a verla!
         </p>
     </section>
@@ -100,6 +104,11 @@
             </div>
         </div>
     </footer>
+    <!--script JS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
