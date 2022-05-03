@@ -145,7 +145,7 @@ p{
 }
 .gallery-img {
     object-fit: cover;
-    height: 100%;
+    height: 38rem;
     width: 100%;
 }
 .gallery-text {
@@ -157,6 +157,13 @@ p{
 .gallery-text ul li {
     font-size: 1.5rem;
 }
+
+.w-100{ 
+    width: 100%;
+    height: 100%;
+    
+}
+
 
 /*-----------------html mas recetas------------------------------*/
 
