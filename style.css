@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,400;1,500;1,600;1,700;1,900&family=Shadows+Into+Light&display=swap');
+/*usos
+
+*/
+:root {
+    --rosado:#ffbaba;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/*Quitar scroll vertical*/
+::-webkit-scrollbar {
+    display: none;
+}
+/* barra navegacion bootstrap */
+.logo{
+    width: 4.5rem;
+    z-index: 1;
+}
+.nav-menu {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+.menu-item {
+    font-size: 2rem;
+    color: aqua;
+}
+.font-mod {
+    font-size: 1.2rem;
+    font-family: 'Poppins',sans-serif;
+}
+.bg-menu {
+    background: rgb(255, 0, 0);
+    background: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(231, 36, 89, 0.9808298319327731) 35%, rgba(97, 2, 2, 1) 100%);
+}
+/*HEADER*/
+.top-d {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.top-i {
+    width: 100%;
+    margin-top: 71px;
+}
+.top-img{
+    position: relative;
+    width: 100%;
+}
+/* ---------------------------- */
+.body-c {
+    background-color: var(--rosado);
+}
+
+.margin-estilos-top {
+    margin-top: 1rem;
+}
+.border-estilos-top {
+    border-top: 1px solid black;
+    padding-top: 1rem;
+    margin-top: 1rem;
+}
+.i-frame {
+    width: 100%;
+    height: 30rem;
+    padding: 1rem 0;
+}
+.i-frame-mod {
+    padding: 0;
+    padding-bottom: 1rem;
+    
+}
+.img-biografia {
+    margin: 1rem;
+}
+.img-mod {
+    height: 28rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 4%;
+}
+.img-gallery {
+    width: 100%;
+    height: 40rem;
+    object-fit: cover;
+}
+.margin-mas-recetas {
+    margin-top: 1rem;
+}
+.padre h2 {
+    font-family: 'Indie Flower', cursive;
+    font-size: 2.5rem;
+}
+.padre h2 {
+    font-family: 'Indie Flower', cursive;
+    font-size: 2.5rem;
+}
+.padre p {
+    font-size: 1.5rem;
+}
+
+.iframe-map {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+
+.span1 {
+    grid-column: span 2;
+    text-align: center;
+}
+
+/* ------------------------------------------------------------------------------------- */
+.footer-mod {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* FOOTER */
+.footer-redes  {
+    font-size: 2.4rem;
+    display: flex;
+    justify-content: flex-end;
+}
+.footer-redes i {
+    padding: 0 1rem;
+    color: var(--rosado);
+}
+.footer-container {
+    background: rgb(255, 0, 0);
+    background: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(231, 36, 89, 0.9808298319327731) 35%, rgba(97, 2, 2, 1) 100%);
+    
+}
+
+.intro-contacto {
+    color: var(--rosado);
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+    margin-right: 3rem;
+}
+.form-container {
+    width: 50%;
+    
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+/** DISPOSITIVOS MOVILES **/
+@media screen and (max-width:450px) {
+    .margin-estilos-top {
+        margin-top: 88px;
+    }
+    .img-mod {
+        height: 14rem;
+    }
+    .logo {
+        width: 2.8rem;
+        margin: 0 0 0 1rem;
+    }
+   .border-nav {
+       border-color:transparent !important;
+   }
+   .top-d {
+       margin: 0;
+   }
+    .footer-redes {
+        justify-content: center;
+    }
+    .top-i {
+        display:none;
+    }
+    .i-frame {
+        width: 100%;
+        height: 20rem;
+    }
+    .footer-i {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+    .margin-mas-recetas {
+        margin-top: 88px ;
+    }
+    
+}
+/*TABLET*/
+@media (min-width:451px) and (max-width:992px) { .border-nav {
+    border-color:transparent !important;
+}
+.img-mod {
+    height: 17rem;
+}
+.main-c {
+    display: block;
+}
+.logo {
+    width: 3.6rem;
+    margin: 0;
+}
+}
+}
