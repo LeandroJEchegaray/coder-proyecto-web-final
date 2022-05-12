@@ -1,0 +1,102 @@
+/*main*/
+
+@import "../base/colores";
+@import "../base/listas";
+@import "../base/mapas";
+@import "../base/variables";
+
+
+.padre h2 {
+    font-family: 'Indie Flower', cursive;
+    font-size: 2.5rem;
+}
+
+.padre h2 {
+    font-family: 'Indie Flower', cursive;
+    font-size: 2.5rem;
+}
+
+.padre p {
+    font-size: 1.5rem;
+}
+
+.span1 {
+    grid-column: span 2;
+    text-align: center;
+}
+
+.iframe-map {
+    width: 100%;
+    border-radius: 1rem;
+}
+/*pagina estilo salsa*/
+
+.margin-estilos-top {
+    margin-top: 1rem;
+}
+
+.img-mod {
+    height: 28rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 4%;
+}
+.border-estilos-top {
+    border-top: 1px solid black;
+    padding-top: 1rem;
+    margin-top: 1rem;
+}
+/* fin pagina estilo salsa*/
+
+/*pagina mas recetas*/
+
+.i-frame {
+    width: 100%;
+    height: 30rem;
+    padding: 1rem 0;
+}
+
+.i-frame-mod {
+    padding: 0;
+    padding-bottom: 1rem;
+}
+.img-gallery {
+    width: 100%;
+    height: 40rem;
+    object-fit: cover;
+}
+
+/*fin pagina mas recetas*/
+
+/*pagina biografia*/
+
+.img-biografia {
+    margin: 1rem;
+}
+.container { margin-top: 5 rem;}
+
+
+/*fin pagina biografia*/
+
+/*pagina contacto*/
+
+.intro-contacto {
+    color: var(--rosado);
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+    margin-right: 3rem;
+}
+
+.form-container {
+    width: 50%;
+
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+}
+/*fin pagina contacto*/

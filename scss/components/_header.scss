@@ -1,0 +1,41 @@
+/* header */
+
+@import "../base/colores";
+@import "../base/listas";
+@import "../base/mapas";
+@import "../base/variables";
+
+
+
+
+.body-c{
+    background-color: nth($colores , 1);
+}
+
+/* barra navegacion bootstrap */
+.logo {
+    width: 4.5rem;
+    z-index: 1;
+}
+
+.font-mod {
+    font-size: nth($font-size , 4);
+    font-family: 'Poppins', sans-serif;
+}
+.top-d {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.top-i {
+    width: 100%;
+    margin-top: 71px;
+}
+
+.top-img {
+    position: relative;
+    width: 100%;
+}
