@@ -1,25 +1,39 @@
 /* footer */
 
-@import "../base/colores";
+
 @import "../base/listas";
 @import "../base/mapas";
 @import "../base/variables";
 
-
-
-.footer-container {
+.footer-i {
     background: rgb(255, 0, 0);
     background: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(231, 36, 89, 0.9808298319327731) 35%, rgba(97, 2, 2, 1) 100%);
 
-}
+    .footer-container {
+        .footer-redes {
+            
+            display: flex;
+            justify-content: flex-end;
 
-.footer-redes {
-    font-size: 2.4rem;
-    display: flex;
-    justify-content: flex-end;
-}
+            a {
 
-.footer-redes i {
-    padding: 0 1rem;
-    color: nth($colores , 1);
+                i {
+                    padding: 0 1rem;
+                    color: $color-text-alt-1;
+                    font-size: 3rem;
+
+                }
+            }
+
+            @media screen and (max-width:450px) {
+                justify-content: center;
+            }
+
+        }
+    }
+
+    @media screen and (max-width:450px) {
+        position: absolute;
+        width: 100%;
+    }
 }

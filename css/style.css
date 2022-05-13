@@ -1,5 +1,6 @@
 /*SCSS*/
 /* estilosGenerales.scss*/
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,400;1,500;1,600;1,700;1,900&family=Shadows+Into+Light&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -7,240 +8,125 @@
   text-decoration: none;
 }
 
-.bg-menu {
-  background: rgb(255, 0, 0);
-  background: linear-gradient(90deg, rgb(255, 0, 0) 0%, rgba(231, 36, 89, 0.9808298319) 35%, rgb(97, 2, 2) 100%);
-}
-
-/** DISPOSITIVOS MOVILES **/
-@media screen and (max-width: 450px) {
-  /*estilo salsa*/
-  .margin-estilos-top {
-    margin-top: 88px;
-  }
-
-  .img-mod {
-    height: 14rem;
-  }
-
-  /*fin estilo salsa*/
-  .logo {
-    width: 2.8rem;
-    margin: 0 0 0 1rem;
-  }
-
-  .border-nav {
-    border-color: transparent !important;
-  }
-
-  .top-d {
-    margin: 0;
-  }
-
-  .footer-redes {
-    justify-content: center;
-  }
-
-  .top-i {
-    display: none;
-  }
-
-  /*pagina mas recetas*/
-  .i-frame {
-    width: 100%;
-    height: 20rem;
-  }
-
-  /* fin pagina mas recetas*/
-  .footer-i {
-    position: absolute;
-    width: 100%;
-  }
-
-  .margin-mas-recetas {
-    margin-top: 88px;
-  }
-}
-/*TABLET*/
-@media (min-width: 451px) and (max-width: 992px) {
-  .border-nav {
-    border-color: transparent !important;
-  }
-
-  /*estilo salsa*/
-  .img-mod {
-    height: 17rem;
-  }
-
-  /*fin estilo salsa*/
-  .main-c {
-    display: block;
-  }
-
-  .logo {
-    width: 3.6rem;
-    margin: 0;
-  }
-
-  .titulo-biografia {
-    font-size: 2.5rem;
-  }
-}
 /* header */
-/*Colores .scss*/
 /*listas*/
 /*mapas*/
 /*almacena valores*/
-.body-c {
-  background-color: #ffbaba;
+.header-i nav {
+  background: rgb(255, 0, 0);
+  background: linear-gradient(90deg, rgb(255, 0, 0) 0%, rgba(231, 36, 89, 0.9808298319) 35%, rgb(97, 2, 2) 100%);
 }
-
-/* barra navegacion bootstrap */
-.logo {
+.header-i nav div a .logo {
   width: 4.5rem;
   z-index: 1;
 }
-
-.font-mod {
+@media screen and (max-width: 450px) {
+  .header-i nav div a .logo {
+    width: 2.8rem;
+    margin: 0 0 0 1rem;
+  }
+}
+@media (min-width: 451px) and (max-width: 992px) {
+  .header-i nav div a .logo {
+    width: 3.6rem;
+    margin: 0;
+  }
+}
+@media (min-width: 451px) and (max-width: 992px) {
+  .header-i nav div .border-nav {
+    border-color: transparent !important;
+  }
+}
+.header-i nav div div ul li .font-mod {
   font-size: 1.2 rem;
   font-family: "Poppins", sans-serif;
 }
-
-.top-d {
+.header-i .top-d {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
-.top-i {
+.header-i .top-d .top-i {
   width: 100%;
   margin-top: 71px;
 }
-
-.top-img {
+.header-i .top-d .top-i .top-img {
   position: relative;
   width: 100%;
 }
-
-/*main*/
-/*Colores .scss*/
-/*listas*/
-/*mapas*/
-/*almacena valores*/
-.padre h2 {
-  font-family: "Indie Flower", cursive;
-  font-size: 2.5rem;
+@media screen and (max-width: 450px) {
+  .header-i .top-d .top-i {
+    display: none;
+  }
+}
+@media screen and (max-width: 450px) {
+  .header-i .top-d {
+    margin: 0;
+  }
 }
 
-.padre h2 {
-  font-family: "Indie Flower", cursive;
-  font-size: 2.5rem;
-}
-
-.padre p {
-  font-size: 1.5rem;
-}
-
-.span1 {
-  grid-column: span 2;
-  text-align: center;
-}
-
-.iframe-map {
-  width: 100%;
-  border-radius: 1rem;
-}
-
-/*pagina estilo salsa*/
-.margin-estilos-top {
-  margin-top: 1rem;
-}
-
-.img-mod {
-  height: 28rem;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 4%;
-}
-
-.border-estilos-top {
-  border-top: 1px solid black;
-  padding-top: 1rem;
-  margin-top: 1rem;
-}
-
-/* fin pagina estilo salsa*/
-/*pagina mas recetas*/
-.i-frame {
-  width: 100%;
-  height: 30rem;
-  padding: 1rem 0;
-}
-
-.i-frame-mod {
-  padding: 0;
-  padding-bottom: 1rem;
-}
-
-.img-gallery {
-  width: 100%;
-  height: 40rem;
-  object-fit: cover;
-}
-
-/*fin pagina mas recetas*/
-/*pagina biografia*/
-.img-biografia {
-  margin: 1rem;
-}
-
-.container {
-  margin-top: 5 rem;
-}
-
-/*fin pagina biografia*/
-/*pagina contacto*/
-.intro-contacto {
-  color: var(--rosado);
-  font-size: 1.8rem;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  width: 100%;
-  text-align: center;
-  margin-right: 3rem;
-}
-
-.form-container {
-  width: 50%;
-}
-
-.form {
-  display: flex;
-  flex-direction: column;
-  margin: 2rem 0;
-}
-
-/*fin pagina contacto*/
 /* footer */
-/*Colores .scss*/
 /*listas*/
 /*mapas*/
 /*almacena valores*/
-.footer-container {
+.footer-i {
   background: rgb(255, 0, 0);
   background: linear-gradient(90deg, rgb(255, 0, 0) 0%, rgba(231, 36, 89, 0.9808298319) 35%, rgb(97, 2, 2) 100%);
 }
-
-.footer-redes {
-  font-size: 2.4rem;
+.footer-i .footer-container .footer-redes {
   display: flex;
   justify-content: flex-end;
 }
-
-.footer-redes i {
+.footer-i .footer-container .footer-redes a i {
   padding: 0 1rem;
   color: #ffbaba;
+  font-size: 3rem;
+}
+@media screen and (max-width: 450px) {
+  .footer-i .footer-container .footer-redes {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 450px) {
+  .footer-i {
+    position: absolute;
+    width: 100%;
+  }
+}
+
+.body-c {
+  background-color: #ffbaba;
+}
+.body-c main .padre h2 {
+  font-family: "Indie Flower", cursive;
+  font-size: 2.5 rem;
+}
+.body-c main .padre p {
+  font-size: 1.5 rem;
+}
+@media screen and (max-width: 450px) {
+  .body-c main .padre {
+    margin-top: 85px;
+  }
+}
+.body-c main .gallery-main .foto-muriel {
+  height: 30rem;
+  width: 100%;
+  object-fit: cover;
+}
+.body-c main .gallery-main .span2 {
+  grid-column: span 2;
+  text-align: center;
+}
+.body-c main .gallery-main .span2 .iframe-map {
+  width: 100%;
+  border-radius: 1rem;
+}
+@media screen and (max-width: 450px) {
+  .body-c .container {
+    margin-top: 85px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
