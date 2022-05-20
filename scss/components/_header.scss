@@ -3,57 +3,66 @@
 @import "../base/listas";
 @import "../base/mapas";
 @import "../base/variables";
+@import "../base/extends";
 
 .header-i {
     nav {
         background: rgb(255, 0, 0);
         background: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(231, 36, 89, 0.9808298319327731) 35%, rgba(97, 2, 2, 1) 100%);
+
         div {
             a {
                 .logo {
                     width: 4.5rem;
                     z-index: 1;
+
                     @media screen and (max-width:450px) {
                         width: 2.8rem;
                         margin: 0 0 0 1rem;
                     }
+
                     @media (min-width:451px) and (max-width:992px) {
                         width: 3.6rem;
                         margin: 0;
                     }
                 }
             }
+
             .border-nav {
-            @media (min-width:451px) and (max-width:992px) {
-                border-color: transparent !important;
+                @media (min-width:451px) and (max-width:992px) {
+                    border-color: transparent !important;
+                }
             }
-            }
+
             div ul li .font-mod {
                 font-size: nth($font-size, 3);
                 font-family: 'Poppins', sans-serif;
             }
         }
     }
+
     .top-d {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        @extend %flex;
+        flex-direction: map-get($boton, flex-direction);
         align-items: center;
+
         .top-i {
-            width: 100%;
+            width: map-get($boton, width);
             margin-top: 71px;
+
             .top-img {
                 position: relative;
-                width: 100%;
+                width: map-get($boton, width);
             }
-        @media screen and (max-width:450px) { 
-            display: none;
+
+            @media screen and (max-width:450px) {
+                display: none;
+            }
         }
+
+        @media screen and (max-width:450px) {
+            margin: 0;
         }
-    @media screen and (max-width:450px) {
-        margin: 0;
-    }
     }
 
 }
-

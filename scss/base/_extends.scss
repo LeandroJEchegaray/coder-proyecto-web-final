@@ -1,3 +1,20 @@
 /*extends.scss*/
 
 /*  % = placeholder */
+
+/*
+%flex{ 
+    display: flex;
+    Justify-content: center;
+    align-items: center;
+}
+en css 
+.galeria{ 
+    @extend %flex;
+}*/
+
+%flex{ 
+    display: flex;
+    Justify-content: center;
+   
+}

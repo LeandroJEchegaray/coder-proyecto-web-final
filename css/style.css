@@ -11,7 +11,40 @@
 /* header */
 /*listas*/
 /*mapas*/
+/* ejemplo
+
+$boton:(
+bg-boton: black,
+border: 2px solid tomato,
+color-text: wite,
+font-size-boton: 20px,
+)
+
+.boton{
+background-color: map-get ($boton, bg-botom);
+border: map-get ($boton, border);
+
+}
+
+*/
 /*almacena valores*/
+/*extends.scss*/
+/*  % = placeholder */
+/*
+%flex{ 
+    display: flex;
+    Justify-content: center;
+    align-items: center;
+}
+en css 
+.galeria{ 
+    @extend %flex;
+}*/
+.footer-i .footer-container .footer-redes, .form-container, .header-i .top-d {
+  display: flex;
+  Justify-content: center;
+}
+
 .header-i nav {
   background: rgb(255, 0, 0);
   background: linear-gradient(90deg, rgb(255, 0, 0) 0%, rgba(231, 36, 89, 0.9808298319) 35%, rgb(97, 2, 2) 100%);
@@ -42,9 +75,7 @@
   font-family: "Poppins", sans-serif;
 }
 .header-i .top-d {
-  display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 .header-i .top-d .top-i {
@@ -66,17 +97,84 @@
   }
 }
 
+/*extends.scss*/
+/*  % = placeholder */
+/*
+%flex{ 
+    display: flex;
+    Justify-content: center;
+    align-items: center;
+}
+en css 
+.galeria{ 
+    @extend %flex;
+}*/
+.footer-i .footer-container .footer-redes, .form-container, .header-i .top-d {
+  display: flex;
+  Justify-content: center;
+}
+
+/*
+diferencia de exten es que perimite aplicar una varible o parametro vacio
+
+@mixin flex ($flex, $align) {
+    display: $flex;
+    align-items: $align;
+
+}
+-productos {
+@include flex( flex, center);
+.producto2{
+    @include flex(flex, flex-start); 
+}*/
+/*contactos*/
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+  width: 50%;
+}
+
 /* footer */
 /*listas*/
 /*mapas*/
+/* ejemplo
+
+$boton:(
+bg-boton: black,
+border: 2px solid tomato,
+color-text: wite,
+font-size-boton: 20px,
+)
+
+.boton{
+background-color: map-get ($boton, bg-botom);
+border: map-get ($boton, border);
+
+}
+
+*/
 /*almacena valores*/
+/*extends.scss*/
+/*  % = placeholder */
+/*
+%flex{ 
+    display: flex;
+    Justify-content: center;
+    align-items: center;
+}
+en css 
+.galeria{ 
+    @extend %flex;
+}*/
+.footer-i .footer-container .footer-redes, .header-i .top-d, .form-container {
+  display: flex;
+  Justify-content: center;
+}
+
 .footer-i {
   background: rgb(255, 0, 0);
   background: linear-gradient(90deg, rgb(255, 0, 0) 0%, rgba(231, 36, 89, 0.9808298319) 35%, rgb(97, 2, 2) 100%);
-}
-.footer-i .footer-container .footer-redes {
-  display: flex;
-  justify-content: flex-end;
 }
 .footer-i .footer-container .footer-redes a i {
   padding: 0 1rem;

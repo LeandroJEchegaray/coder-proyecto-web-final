@@ -1,0 +1,31 @@
+/*
+
+
+@if $darkmode == black {
+    border: solid 2px blueviolet;
+    @else{
+        border: solid 2px turquoise;
+    }
+}
+
+
+.bg-condicion{
+    @include modos(black);
+}
+
+.bg-condicion-2{
+    @include modos(orange);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+*/

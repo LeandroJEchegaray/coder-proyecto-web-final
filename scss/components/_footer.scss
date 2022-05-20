@@ -4,6 +4,7 @@
 @import "../base/listas";
 @import "../base/mapas";
 @import "../base/variables";
+@import "../base/extends";
 
 .footer-i {
     background: rgb(255, 0, 0);
@@ -11,10 +12,9 @@
 
     .footer-container {
         .footer-redes {
-            
-            display: flex;
-            justify-content: flex-end;
 
+            @extend %flex;
+            
             a {
 
                 i {
@@ -33,7 +33,8 @@
     }
 
     @media screen and (max-width:450px) {
-        position: absolute;
-        width: 100%;
+        
+        position: map-get($boton, position);
+        width: map-get($boton, width);
     }
 }

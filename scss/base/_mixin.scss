@@ -1,0 +1,18 @@
+/*
+diferencia de exten es que perimite aplicar una varible o parametro vacio
+
+@mixin flex ($flex, $align) {
+    display: $flex;
+    align-items: $align;
+
+}
+-productos {
+@include flex( flex, center);
+.producto2{
+    @include flex(flex, flex-start); 
+}*/
+
+@mixin flex ($flex, $width){
+dislplay: $flex;
+width: $width;
+}
