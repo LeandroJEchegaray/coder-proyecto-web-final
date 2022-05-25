@@ -1,18 +1,6 @@
-/*
-diferencia de exten es que perimite aplicar una varible o parametro vacio
-
-@mixin flex ($flex, $align) {
-    display: $flex;
-    align-items: $align;
-
-}
--productos {
-@include flex( flex, center);
-.producto2{
-    @include flex(flex, flex-start); 
-}*/
-
-@mixin youtube ($width, $height){
-
-    
+@mixin flex ($display,$justify, $aling, $direction) {
+    display: $display;
+    justify-content: $justify;
+    align-items: $aling;
+    flex-direction: $direction;
 }

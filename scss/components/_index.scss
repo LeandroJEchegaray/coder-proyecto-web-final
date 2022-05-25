@@ -1,0 +1,38 @@
+.body-c {
+    background-color: $bg-gral;
+    main {
+        .padre {
+            
+            h2 {
+                font-family: $font-fam1;
+                font-size: nth($font-size, 6);
+            }
+            p {
+                font-size: nth($font-size, 4);
+            }
+            @media screen and (max-width:450px) {
+                margin-top: 85px;
+            }
+        }
+        .gallery-main {
+            .foto-muriel {
+                height: 30rem;
+                width: 100%;
+                object-fit: cover;
+            }
+            .span2 {
+                grid-column: span 2;
+                text-align: center;
+                .iframe-map {
+                    width: 100%;
+                    border-radius: 1rem;
+                }
+            }
+        }
+    }
+    .container {
+        @media screen and (max-width:450px) {
+            margin-top: 85px;
+        }
+    }
+}

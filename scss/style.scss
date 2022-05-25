@@ -1,45 +1,16 @@
 /*SCSS*/
 
-@import "../scss/base/estilosGenerales";
-@import "../scss/components/header";
-@import "../scss/components/main";
-@import "../scss/components/footer";
-
-.body-c {
-    background-color: $bg-gral;
-    main {
-        .padre {
-            
-            h2 {
-                font-family: 'Indie Flower', cursive;
-                font-size: nth($font-size, 6);
-            }
-            p {
-                font-size: nth($font-size, 4);
-            }
-            @media screen and (max-width:450px) {
-                margin-top: 85px;
-            }
-        }
-        .gallery-main {
-            .foto-muriel {
-                height: 30rem;
-                width: 100%;
-                object-fit: cover;
-            }
-            .span2 {
-                grid-column: span 2;
-                text-align: center;
-                .iframe-map {
-                    width: 100%;
-                    border-radius: 1rem;
-                }
-            }
-        }
-    }
-    .container {
-        @media screen and (max-width:450px) {
-            margin-top: 85px;
-        }
-    }
-}
+@import "./base/estilosGenerales";
+@import "./base/condiciones";
+@import "./base/extends";
+@import "./base/listas";
+@import "./base/mapas";
+@import "./base/mixin";
+@import "./base/variables";
+@import "./base/operadores.scss";
+@import "./components/forms";
+@import "./components/biografia";
+@import "./components/header";
+@import "./components/index";
+@import "./components/main";
+@import "./components/footer";

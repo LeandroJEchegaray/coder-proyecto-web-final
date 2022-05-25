@@ -1,15 +1,6 @@
 /* footer */
-
-
-@import "../base/listas";
-@import "../base/mapas";
-@import "../base/variables";
-@import "../base/extends";
-@import "../base/mixin";
-
 .footer-i {
-    background: rgb(255, 0, 0);
-    background: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(231, 36, 89, 0.9808298319327731) 35%, rgba(97, 2, 2, 1) 100%);
+    background-color: $bg-nav;
 
     .footer-container {
         .footer-redes {
@@ -20,7 +11,7 @@
 
                 i {
                     padding: 0 1rem;
-                    color: $color-text-alt-1;
+                    color: $color-text-alt-3;
                     font-size: 3rem;
 
                 }

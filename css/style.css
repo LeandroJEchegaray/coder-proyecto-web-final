@@ -8,7 +8,54 @@
   text-decoration: none;
 }
 
-/* header */
+/*
+
+
+@if $darkmode == black {
+    border: solid 2px blueviolet;
+    @else{
+        border: solid 2px turquoise;
+    }
+}
+
+
+.bg-condicion{
+    @include modos(black);
+}
+
+.bg-condicion-2{
+    @include modos(orange);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+/*extends.scss*/
+/*  % = placeholder */
+/*
+%flex{ 
+    display: flex;
+    Justify-content: center;
+    align-items: center;
+}
+en css 
+.galeria{ 
+    @extend %flex;
+}*/
+.footer-i .footer-container .footer-redes, .header-i .top-d, .form-container {
+  display: flex;
+  Justify-content: center;
+}
+
 /*listas*/
 /*mapas*/
 /* ejemplo
@@ -28,39 +75,84 @@ border: map-get ($boton, border);
 
 */
 /*almacena valores*/
-/*extends.scss*/
-/*  % = placeholder */
 /*
-%flex{ 
-    display: flex;
-    Justify-content: center;
-    align-items: center;
+calculos
+
+%ancho-img:50%;
+
+
+.img{
+    width: $ancho-img *2;
+
+    }
+    funcion cal () de css
+
+
+
+
+
+
+*/
+@media screen and (max-width: 450px) {
+  .padre-e {
+    margin: 0;
+    margin-top: 31px;
+  }
 }
-en css 
-.galeria{ 
-    @extend %flex;
-}*/
-.footer-i .footer-container .footer-redes, .form-container, .header-i .top-d {
+
+.form {
   display: flex;
-  Justify-content: center;
+  justify-content: flex-start;
+  align-items: none;
+  flex-direction: column;
+  margin: 0 9rem;
+  width: 100%;
+}
+.form .form-text {
+  font-size: 1.5rem;
+  color: black;
+  margin-bottom: 0.3rem;
+}
+.form .form__item {
+  background-color: #fdf1f1;
+  border: 3px solid #a6132e;
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+.form .text-a {
+  resize: none;
+}
+.form .boton-contacto {
+  background-color: #a6132e;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  color: #ffbaba;
+  margin-top: 1rem;
+}
+@media screen and (max-width: 800px) {
+  .form {
+    margin: 0 2rem;
+  }
 }
 
-/*
-diferencia de exten es que perimite aplicar una varible o parametro vacio
-
-@mixin flex ($flex, $align) {
-    display: $flex;
-    align-items: $align;
-
+.img-biografia {
+  width: 100%;
+  object-fit: cover;
+  height: 25rem;
+  margin: 1rem 0;
 }
--productos {
-@include flex( flex, center);
-.producto2{
-    @include flex(flex, flex-start); 
-}*/
+
+.titulo-biografia {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* header */
 .header-i nav {
-  background: rgb(255, 0, 0);
-  background: linear-gradient(90deg, rgb(255, 0, 0) 0%, rgba(231, 36, 89, 0.9808298319) 35%, rgb(97, 2, 2) 100%);
+  background-color: #ffbaba;
+  padding: 0;
 }
 .header-i nav div a .logo {
   width: 4.5rem;
@@ -84,7 +176,7 @@ diferencia de exten es que perimite aplicar una varible o parametro vacio
   }
 }
 .header-i nav div div ul li .font-mod {
-  font-size: 1.2 rem;
+  font-size: 1.2rem;
   font-family: "Poppins", sans-serif;
 }
 .header-i .top-d {
@@ -93,7 +185,7 @@ diferencia de exten es que perimite aplicar una varible o parametro vacio
 }
 .header-i .top-d .top-i {
   width: 100%;
-  margin-top: 71px;
+  margin-top: 44.23px;
 }
 .header-i .top-d .top-i .top-img {
   position: relative;
@@ -110,135 +202,15 @@ diferencia de exten es que perimite aplicar una varible o parametro vacio
   }
 }
 
-/*extends.scss*/
-/*  % = placeholder */
-/*
-%flex{ 
-    display: flex;
-    Justify-content: center;
-    align-items: center;
-}
-en css 
-.galeria{ 
-    @extend %flex;
-}*/
-.footer-i .footer-container .footer-redes, .form-container, .header-i .top-d {
-  display: flex;
-  Justify-content: center;
-}
-
-/*
-diferencia de exten es que perimite aplicar una varible o parametro vacio
-
-@mixin flex ($flex, $align) {
-    display: $flex;
-    align-items: $align;
-
-}
--productos {
-@include flex( flex, center);
-.producto2{
-    @include flex(flex, flex-start); 
-}*/
-/*contactos*/
-.form {
-  display: flex;
-  flex-direction: column;
-  margin: 2rem 0;
-  width: 50%;
-}
-
-.img-gallery {
-  width: 100%;
-  height: 40rem;
-  object-fit: cover;
-}
-
-.i-frame {
-  width: 100%;
-  height: 20rem;
-}
-
-/* footer */
-/*listas*/
-/*mapas*/
-/* ejemplo
-
-$boton:(
-bg-boton: black,
-border: 2px solid tomato,
-color-text: wite,
-font-size-boton: 20px,
-)
-
-.boton{
-background-color: map-get ($boton, bg-botom);
-border: map-get ($boton, border);
-
-}
-
-*/
-/*almacena valores*/
-/*extends.scss*/
-/*  % = placeholder */
-/*
-%flex{ 
-    display: flex;
-    Justify-content: center;
-    align-items: center;
-}
-en css 
-.galeria{ 
-    @extend %flex;
-}*/
-.footer-i .footer-container .footer-redes, .header-i .top-d, .form-container {
-  display: flex;
-  Justify-content: center;
-}
-
-/*
-diferencia de exten es que perimite aplicar una varible o parametro vacio
-
-@mixin flex ($flex, $align) {
-    display: $flex;
-    align-items: $align;
-
-}
--productos {
-@include flex( flex, center);
-.producto2{
-    @include flex(flex, flex-start); 
-}*/
-.footer-i {
-  background: rgb(255, 0, 0);
-  background: linear-gradient(90deg, rgb(255, 0, 0) 0%, rgba(231, 36, 89, 0.9808298319) 35%, rgb(97, 2, 2) 100%);
-}
-.footer-i .footer-container .footer-redes a i {
-  padding: 0 1rem;
-  color: #ffbaba;
-  font-size: 3rem;
-}
-@media screen and (max-width: 450px) {
-  .footer-i .footer-container .footer-redes {
-    justify-content: center;
-  }
-}
-@media screen and (max-width: 450px) {
-  .footer-i {
-    position: absolute;
-    width: 100%;
-  }
-}
-
 .body-c {
-  background-color: #ffbaba;
+  background-color: #fdf1f1;
 }
 .body-c main .padre h2 {
-  font-family: "Indie Flower", cursive;
-  font-size: 2.5 rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
 }
 .body-c main .padre p {
-  font-size: 1.5 rem;
+  font-size: 1.5rem;
 }
 @media screen and (max-width: 450px) {
   .body-c main .padre {
@@ -261,6 +233,100 @@ diferencia de exten es que perimite aplicar una varible o parametro vacio
 @media screen and (max-width: 450px) {
   .body-c .container {
     margin-top: 85px;
+  }
+}
+
+.padre {
+  margin: 1rem 0;
+}
+.padre .titulo {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+.padre .texto-p {
+  font-size: 1.5rem;
+  margin: 0 1rem;
+}
+
+.img-gallery {
+  width: 100%;
+  height: 40rem;
+  object-fit: cover;
+  margin-top: 1rem;
+}
+@media screen and (max-width: 450px) {
+  .img-gallery {
+    margin: 0;
+  }
+}
+
+.i-frame {
+  width: 100%;
+  height: 20rem;
+}
+
+.foto-muriel {
+  margin: 2rem;
+  width: 100%;
+}
+
+.car-mod {
+  width: 50%;
+  margin: 0 auto;
+}
+@media (min-width: 451px) and (max-width: 992px) {
+  .car-mod {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .car-mod {
+    width: 90%;
+  }
+}
+
+.img-mod {
+  height: 22rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 450px) {
+  .padre-e {
+    margin: 0;
+    margin-top: 31px;
+  }
+}
+
+.margin-top {
+  margin: 1rem 0;
+}
+@media screen and (max-width: 768px) {
+  .margin-top {
+    margin: 0;
+  }
+}
+
+/* footer */
+.footer-i {
+  background-color: #ffbaba;
+}
+.footer-i .footer-container .footer-redes a i {
+  padding: 0 1rem;
+  color: black;
+  font-size: 3rem;
+}
+@media screen and (max-width: 450px) {
+  .footer-i .footer-container .footer-redes {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 450px) {
+  .footer-i {
+    position: absolute;
+    width: 100%;
   }
 }
 

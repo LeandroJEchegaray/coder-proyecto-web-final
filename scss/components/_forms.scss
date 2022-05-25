@@ -1,0 +1,40 @@
+.form-container {
+    @extend %flex;
+}
+.padre-e {
+    @media screen and (max-width:450px) {
+        margin: 0;
+        margin-top: 31px;
+    }
+}
+.form {
+    @include flex(flex,flex-start,none,column);
+    margin: 0 9rem;
+    width: 100%;
+   .form-text {
+       font-size: nth($font-size, 4);
+       color: $color-text-label;
+       margin-bottom: .3rem;
+   }
+    .form__item {
+        background-color: $bg-gral;
+        border: 3px solid $color-text-alt-2;
+        border-radius: 1rem;
+        padding: .5rem;
+    }
+    .text-a {
+        resize: none;
+    }
+    .boton-contacto {
+        background-color: $color-text-alt-2;
+        border: none;
+        border-radius: .5rem;
+        padding: .5rem;
+        font-size: nth($font-size,4);
+        color:$color-text-alt-1;
+        margin-top: 1rem;
+    }
+    @media screen and (max-width: 800px) {
+        margin: 0 2rem;
+    }
+}

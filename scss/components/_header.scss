@@ -1,16 +1,8 @@
 /* header */
-
-@import "../base/listas";
-@import "../base/mapas";
-@import "../base/variables";
-@import "../base/extends";
-@import "../base/mixin";
-
 .header-i {
     nav {
-        background: rgb(255, 0, 0);
-        background: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(231, 36, 89, 0.9808298319327731) 35%, rgba(97, 2, 2, 1) 100%);
-
+        background-color: $bg-nav;
+        padding: 0;
         div {
             a {
                 .logo {
@@ -49,7 +41,7 @@
 
         .top-i {
             width: map-get($boton, width);
-            margin-top: 71px;
+            margin-top: 44.23px;
 
             .top-img {
                 position: relative;
